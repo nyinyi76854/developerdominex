@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genix - Falcon S & FWord</title>
+<link rel="icon" href="https://developerdominex.js.org/assets/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 1rem;
+        }
+
+        /* Header Styling */
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        .header img {
+            width: 180px;
+            margin: 0 1rem;
+            filter: drop-shadow(0 5px 10px rgba(0, 255, 213, 0.2));
+        }
+
+        /* App Display */
+        .apps {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        .app-card {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 255, 213, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .app-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0, 255, 213, 0.25);
+        }
+
+        /* Button Styling */
+        .btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .download-btn {
+            background-color: #00ffd5;
+            color: #121212;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 255, 213, 0.2);
+        }
+        .download-btn:hover {
+            background-color: #00e6c1;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0, 255, 213, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://developerdominex.js.org/assets/genix.png" alt="Genix">
+    </div>
+
+    <!-- Application Display -->
+    <div class="apps">
+        <div class="app-card">
+            <img src="https://developerdominex.js.org/assets/falcons.png" alt="Falcon S">
+        </div>
+        <div class="app-card">
+            <img src="https://developerdominex.js.org/assets/fword.png" alt="FWord">
+        </div>
+    </div>
+
+    <!-- Download Buttons -->
+    <div class="btn-container">
+        <a href="https://apkpure.com/falcon-s/com.message.noblechat/download" class="download-btn">
+            Download Falcon S
+        </a>
+        <a href="https://apkpure.com/fword/com.falcons.app/download" class="download-btn">
+            Download FWord
+        </a>
+    </div>
+
+</body>
+</html>
